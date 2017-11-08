@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using BCCMobileAppLauncher.View;
 
 using Xamarin.Forms;
 
@@ -12,21 +9,12 @@ namespace BCCMobileAppLauncher
         public App()
         {
             // The root page of your application
-            MainPage = new ContentPage
-            {
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
-                    }
-                }
-            };
+            MainPage = new FirstPage();
+            
+
         }
 
+        
         protected override void OnStart()
         {
             // Handle when your app starts
@@ -41,5 +29,7 @@ namespace BCCMobileAppLauncher
         {
             // Handle when your app resumes
         }
+
+        
     }
 }
